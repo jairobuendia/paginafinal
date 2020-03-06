@@ -394,6 +394,10 @@ dt {font-weight: bold;
         text-align: center;}
           }
 
+/*******+ estilo smooth scroll*****/
+html {
+  scroll-behavior: smooth;
+}
 
 /***** estilo del footer********/
 footer{background-color:#404040 ;
