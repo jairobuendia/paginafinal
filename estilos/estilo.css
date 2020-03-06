@@ -39,6 +39,11 @@ header {background-image: url("../imagenes/header.jpg");
 .texto-hero a:hover{background-color: grey;
                         color: white;}
 
+@media screen and (max-width:420px){
+  header {background-image: url("../imagenes/headermovil.jpg");
+          }
+}
+
 
 
 /******* estilo de la nav responsive ************/
@@ -99,10 +104,27 @@ header {background-image: url("../imagenes/header.jpg");
         position: relative;
         display: inline-block;
         width: 45%;
-        margin: 2.4%;
-        
+        margin: 2.4%; 
 
       }
+      
+    @media screen and (max-width:1200px){
+      .imagenes{width: 45%;
+                margin: 2%;}
+    }
+
+    @media screen and (max-width:800px){
+      .imagenes{width: 95%;
+                margin: 2%;
+          }
+
+    @media screen and (max-width:420px){
+      .imagenes {width: 90%;
+                margin: 5%;}
+    }
+    }
+
+    
       
     .image {
         display: block;
@@ -176,6 +198,10 @@ header {background-image: url("../imagenes/header.jpg");
 .tablink:hover {
   background-color: #777;
 }
+@media screen and (max-width:420px){
+  .tablink {font-size: 8px;}
+          }
+
 
 .imagen2{width: 80%;
         background-position: center;
@@ -189,6 +215,10 @@ header {background-image: url("../imagenes/header.jpg");
 }
 .tabcontent h1{font-family: handler;
                 font-size: 6vh;}
+
+@media screen and (max-width:420px){
+  .tabcontent h1{font-size: 4vh};
+          }
 
 #London {background-color:white;}
 #Paris {background-color:white;}
@@ -355,6 +385,16 @@ dt {font-weight: bold;
         margin-bottom: 2%;
         margin-top: 2%;}
 
+
+/***** estilo para los mapas iframe*******/
+
+@media screen and (max-width:420px){
+ iframe{width: 280px;
+        height: 210px;
+        text-align: center;}
+          }
+
+
 /***** estilo del footer********/
 footer{background-color:#404040 ;
 }
@@ -364,4 +404,8 @@ footer p{margin: 0;
     text-align: center;
     padding: 1.5%;
     font-size: 90%;}
+
+@media screen and (max-width:420px){
+      footer p{font-size: 10px;}
+              }
 
